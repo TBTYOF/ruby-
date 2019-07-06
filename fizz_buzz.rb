@@ -9,3 +9,20 @@ puts "--------------------"
 puts "それでは早速、"
 puts "１以上の整数を入力してください"
 
+number = gets.to_i
+
+def fizz_buzz(check)
+	if check % 3 == 0 && check % 5 == 0
+		return "FizzBuzz"
+	elsif check % 3 == 0
+		return "Fizz"
+	elsif check % 5 == 0
+		return "Buzz"
+	else
+		return check
+	end
+end
+
+puts "--------------------"
+puts "結果は、、、"
+puts fizz_buzz(number)
